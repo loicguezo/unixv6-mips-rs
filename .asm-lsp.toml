@@ -1,0 +1,18 @@
+[default_config]
+version = "0.10.1"
+assembler = "gas"
+instruction_set = "mips"
+
+[default_config.opts]
+compiler = "zig"
+compile_flags_txt = [
+    "cc",
+    "-fsyntax-only",
+    "-x",
+    "assembler-with-cpp",
+    "-target",
+    "mipsel-freestanding-none",
+    "-march=mips32",
+]
+diagnostics = true
+default_diagnostics = false
