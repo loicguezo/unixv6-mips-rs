@@ -7,6 +7,7 @@ use core::panic::PanicInfo;
 mod arch;
 mod param;
 mod proc;
+mod user;
 
 #[unsafe(no_mangle)]
 pub extern "C" fn kmain() -> ! {
